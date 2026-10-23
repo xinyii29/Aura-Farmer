@@ -1,0 +1,247 @@
+ #languageScreen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 90vh;
+      padding: 20px;
+      gap: 16px;
+      font-family:'Times New Roman', Times, serif;
+      background-color: #e0f7fa;
+      color: #259e92;
+      font-size: 20px;
+    }
+ 
+    #languageScreen h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+ 
+    #languageScreen p {
+      color: #225d57;
+      margin-bottom: 25px;
+      text-align: center;
+      font-size: 25px;
+    }
+ 
+    .lang-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      width: 100%;
+      max-width: 400px;
+    }
+ 
+    .lang-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 25px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: 1.5px solid rgb(90, 89, 89);
+      border-radius: 16px;
+      background: white;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: rgb(58, 58, 58);
+      margin-bottom: 10px;
+    }
+ 
+    .lang-btn:hover {
+      border-color: #a48ef2;
+      background: #f0fcff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+    }
+ 
+    .lang-btn .flag {
+      font-size: 2.4rem;
+    }
+ 
+    /* Game screen */
+    #gameScreen {
+      display: none;
+    }
+ 
+    .game-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px 0;
+      margin-bottom: 20px;
+    }
+ 
+    .lang-tag {
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: #e8eafa;
+      color: #bfa4ed;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+ 
+    .change-lang-btn {
+      font-size: 0.8rem;
+      background: none;
+      border: 1px solid #8d8d8d;
+      border-radius: 20px;
+      padding: 4px 10px;
+      cursor: pointer;
+      color: #555;
+    }
+ 
+    .change-lang-btn:hover {
+      background: #beb9b9;
+    }
+ 
+    .complete-msg {
+      grid-column: 1 / -1;
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 40px 20px;
+      color: #15688c;
+      line-height: 2;
+      text-shadow: 5px 5px 3px rgba(12, 12, 12, 0.2);
+      
+}
+
+
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #d7edf7;
+  color: #111;
+  padding: 24px;
+}
+
+.top-bar {
+  width: 100%;
+  height: 18px;
+  border: 1.6px solid #5c5c5c;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  margin-bottom: 14px;
+}
+
+.bar-fill {
+  width: 10%;
+  height: 100%;
+  background: #9bc8f8;
+  transition: width 0.3s;
+}
+
+.count {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #474747;
+}
+
+.score-box {
+  display: inline-block;
+  border: 1.5px solid #3e3f3e;
+  background: white;
+  padding: 12px 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  min-height: 140px;
+  border: 3px solid transparent;
+  border-radius: 18px;
+  background: #88acea;
+  color: rgb(30, 29, 29);
+  font-size: 42px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card.selected {
+  border-color: rgb(235, 233, 136);
+}
+
+.card.correct {
+  background: lightgreen;
+}
+
+.card.wrong {
+  background: pink;
+}
+
+.card.matched {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.btn {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.Btn {
+  padding: 14px 40px;
+  border: 1px solid #b0cbf9;
+  border-radius: 8px;
+  background: #b0cbf9;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.Btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .game-board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    min-height: 110px;
+    font-size: 34px;
+  }
+}
+
+.home-btn {
+  padding: 14px 40px;
+  border: 1px solid #b0cbf9;
+  border-radius: 8px;
+  background: #b0cbf9;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.home-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+

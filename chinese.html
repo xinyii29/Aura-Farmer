@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Language Quiz Game</title>
+    <link rel="stylesheet" href="stylechinese.css">
+
+</head>
+<body>
+    
+    <div class="config-container">
+        <h2 class="config-title">Challenge Yourself!</h2>
+        <h3 class="config-subtitle">😍 Master Chinese, connect with the world! 🙌</h3>
+        <hr>
+
+        <div class="config-option">
+            <h4 class="option-title">~ Select level ~ </h4>
+            <div class="level-options">
+
+                <a href="quiz.html?lang=chinese&level=1"><button>1</button></a>
+                <a href="quiz.html?lang=chinese&level=2"><button>2</button></a>
+                <a href="quiz.html?lang=chinese&level=3"><button>3</button></a>
+                <a href="quiz.html?lang=chinese&level=4"><button>4</button></a>
+                <a href="quiz.html?lang=chinese&level=5"><button>5</button></a>
+                <a href="quiz.html?lang=chinese&level=6"><button>6</button></a>
+                <a href="quiz.html?lang=chinese&level=7"><button>7</button></a>
+                <a href="quiz.html?lang=chinese&level=8"><button>8</button></a>
+                <a href="quiz.html?lang=chinese&level=9"><button>9</button></a>
+                <a href="quiz.html?lang=chinese&level=10"><button>10</button></a>
+                <a href="quiz.html?lang=chinese&level=11"><button>11</button></a>
+                <a href="quiz.html?lang=chinese&level=12"><button>12</button></a>     
+                <a href="quiz.html?lang=chinese&level=13"><button>13</button></a>
+                <a href="quiz.html?lang=chinese&level=14"><button>14</button></a>
+                <a href="quiz.html?lang=chinese&level=15"><button>15</button></a>
+
+            </div>
+        </div>
+        <audio id="clickSound" src="audio/click.mp3"></audio>
+
+    </div>
+<script>
+document.querySelectorAll(".level-options a").forEach(link => {
+    link.addEventListener("click",function(e){
+        e.preventDefault();
+
+        const sound = document.getElementById("clickSound");
+        sound.currentTime = 0;
+        sound.play();
+
+        const url = this.href;
+
+        setTimeout(() => {
+            window.location.href = url;
+        },500);
+    });
+}); 
+</script>
+
+    <div class="sticker star">⭐</div>
+    <div class="sticker heart">💖</div>
+    <div class="sticker bear">🧸</div>
+    <div class="sticker flower">🌸</div>
+
+</body>
+</html>

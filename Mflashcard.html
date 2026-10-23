@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Malay Vocabulary Cards</title>
+        <link rel="stylesheet" href="Mflashcard.css">
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="bar-fill" id="barFill"></div>
+        </div>
+        <div class="count" id="count">Card 1 of 40</div>
+
+        <div class="card" id="card">
+        <div class="image-box" id="imageBox"></div>
+        <div class="eng-word" id="engWord"></div>
+        <div class="malay-oval">
+            <div class="malay-char" id="MalayChar"></div>
+            <div class="pinyin" id="pinyin"></div>
+        </div>
+        <button onclick="playSound()">🔊</button> 
+        </div>
+        </div>
+        <div class="btn">
+          <button class="Btn" id="prevBtn" onclick="navigate(-1)">← Prev</button>
+           <div class="dots" id="dots"></div>
+           <button class="Btn" id="nextBtn" onclick="navigate(1)">Next →</button>
+           <button class="Btn" id="homepage-btn" onclick="GoToHomePage('index.html')">Home Page</button>
+        </div>
+        <audio id="clickSound" src="audio/click.mp3"></audio>
+
+        <script src="Mflashcard.js"></script>
+    </body>
+</html>

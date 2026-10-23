@@ -1,0 +1,92 @@
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    min-height:5vh;
+    margin-top: 10px;
+    color:#ad1457;
+
+}
+
+
+h3{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    min-height:3vh;
+    color:#ec407a;
+}
+
+
+h4{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    min-height:1vh;
+    color:#ec407a; 
+}
+
+
+* {
+    margin:3;
+    padding:3;
+    box-sizing:border-box;
+    font-family:sans-serif;
+    align-self: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    background:#FFD6E8;
+}
+
+.config-container{
+    width:450px;
+    padding:25px;
+    text-align:center;
+    background: #f3e5f5;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+
+
+.config-option button {
+    margin:5px;
+    padding:10px;
+    font-size:16px;
+    font-weight:500;
+    background:#ffffff;
+    border:1px #ffffff solid;
+    border-radius:6px;
+    cursor:pointer;
+    color:#5A5A5A;
+
+}
+
+.sticker{
+    position: fixed;
+    font-size: 40px;
+    opacity: 0.7;
+}
+
+.star{
+    top: 20px;
+    left: 20px;
+}
+
+.heart{
+    top: 50px;
+    right: 30px;
+}
+
+.bear{
+    bottom: 20px;
+    left: 30px;
+}
+
+.flower{
+    bottom: 30px;
+    right: 20px;
+}

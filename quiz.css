@@ -1,0 +1,84 @@
+h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    min-height:5vh;
+    margin-bottom:100px;
+    color:rgb(63, 54, 56);
+    margin-top: 50px;
+
+}
+
+button {
+    margin:10px;
+    padding:30px;
+    font-size:25px;
+    font-weight:500;
+    background:#fecfe6;
+    border:55px #fecfe6 solid;
+    border-radius:10px;
+    cursor:pointer;
+    color:#5A5A5A;
+    margin-block-end: auto;
+    margin-block-start: 50px;
+}
+
+button1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:30px;
+    padding:10px;
+    font-size:20px;
+    font-weight:500;
+    background:#f4ddac;
+    border:1px #f4ddac solid;
+    border-radius: 100px;
+    cursor:pointer;
+    color:#2d2d2d;
+}
+
+button2 {
+    margin:10px;
+    padding:6px;
+    font-size:13px;
+    font-weight:100;
+    color:aliceblue;
+    background:#e0effd;
+    border-radius: 5px;
+    cursor:pointer;
+    color:#3f3f3f;
+    font-family: sans-serif;
+}
+
+p{
+    font-family:sans-serif;
+    font-size: 20px;
+    min-height:3vh;
+    color:#454545;
+}
+
+* {
+    margin:3;
+    padding:3;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+    align-self: center;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(252, 179, 221);
+}
+
+.progress-container{
+    width: 80%;
+    height: 20px;
+    background: #FFE5EC;
+    border-radius: 20px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#progress-bar{
+    height: 100%;
+    width: 0%;
+    background: #A2D2FF;
+    border-radius: 20px;
+    transition: 0.5s;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aura Farmer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="box">
+        <p class="top-text">Welcome to</p>
+        <h1 class="title">AuraFarmer</h1>
+        <p class="small-text">We will help you to farm your aura by learning language</p>
+        <p class="small-text2">Your Total Aura😎: <span id="totalScore">0</span></p>
+    
+        <button class="pair-btn" onclick="goToNextPage('language.html')">Start Learning</button>
+        <div>
+            
+        <button class="pair-btn" onclick="goToNextPage('matching.html')">Pair Match</button>
+        <button class="pair-btn" onclick="startQuiz()">Vocabulary Test</button>
+
+    </div>
+    </div>
+    <audio id="clickSound" src="click.mp3"></audio>
+    <script src="score.js"></script>
+    <script>
+      document.getElementById("totalScore").textContent = getScore();
+    </script>
+    <script src="script.js"></script>
+        
+
+</body>    
+
+</html>

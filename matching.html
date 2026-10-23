@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pairing Game</title>
+  <link rel="stylesheet" href="matching.css">
+</head>
+<body>
+ 
+  <div id="languageScreen">
+    <h1>Choose a Language</h1>
+    <p>Select a language to start matching!</p>
+    <div class="lang-grid">
+      <button class="lang-btn" onclick="selectLanguage('mandarin')">
+        <span class="flag">🇨🇳</span>
+        Mandarin
+      </button>
+      <button class="lang-btn" onclick="selectLanguage('cantonese')">
+        <span class="flag">🇭🇰</span>
+        Cantonese
+      </button>
+      <button class="lang-btn" onclick="selectLanguage('russian')">
+        <span class="flag">🇷🇺</span>
+        Russian
+      </button>
+      <button class="lang-btn" onclick="selectLanguage('malay')">
+        <span class="flag">🇲🇾</span>
+        Malay
+      </button>
+    </div>
+  </div>
+ 
+  <div id="gameScreen">
+    <div class="game-header">
+      <span class="lang-tag" id="langLabel"></span>
+      <button class="change-lang-btn" onclick="showLanguageScreen()">Change Language</button>
+    </div>
+ 
+    <div class="top-bar">
+      <div class="bar-fill" id="barFill"></div>
+    </div>
+    <div class="count" id="count">Level 1 of 10</div>
+    <div class="score-box">Scored aura😎 : <span id="score">0</span></div>
+    <div class="game-board" id="gameBoard"></div>
+    <div class="btn">
+      <button class="home-btn" onclick="GoToHomePage('index.html')">Home Page</button>
+      <button class="Btn" id="nextBtn" onclick="navigate(1)">Next →</button>
+    </div>
+  </div>
+  <audio id="clickSound" src="click.mp3"></audio>
+  <script src="score.js"></script>
+    <script>
+      document.getElementById("totalScore").textContent = getScore();
+    </script>
+ 
+  <script src="matching.js"></script>
+</body>
+</html>

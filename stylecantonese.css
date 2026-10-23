@@ -1,0 +1,92 @@
+h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 28px;
+    min-height:5vh;
+    margin-top: 10px;
+    color:#6a1b9a;
+
+}
+
+
+h3{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    min-height:3vh;
+    color:#9c27b0;
+}
+
+
+h4{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    min-height:1vh;
+    color:#9c27b0; 
+}
+
+
+* {
+    margin:3;
+    padding:3;
+    box-sizing:border-box;
+    font-family:sans-serif;
+    align-self: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    background:#efd0f7;
+}
+
+.config-container{
+    width:450px;
+    padding:25px;
+    text-align:center;
+    background: #f8e8f8;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+
+
+.config-option button {
+    margin:5px;
+    padding:10px;
+    font-size:16px;
+    font-weight:500;
+    background:#ffffff;
+    border:1px #ffffff solid;
+    border-radius:6px;
+    cursor:pointer;
+    color:#5A5A5A;
+
+}
+
+.sticker{
+    position: fixed;
+    font-size: 40px;
+    opacity: 0.7;
+}
+
+.boba{
+    top: 20px;
+    left: 20px;
+}
+
+.cloud{
+    top: 50px;
+    right: 30px;
+}
+
+.star{
+    bottom: 20px;
+    left: 30px;
+}
+
+.cat{
+    bottom: 30px;
+    right: 20px;
+}
